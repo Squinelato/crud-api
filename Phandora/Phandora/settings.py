@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'app.apps.AppConfig',
     'corsheaders',
+    'rest_framework_swagger',
 ]
 
 MIDDLEWARE = [
@@ -79,6 +80,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Phandora.wsgi.application'
 
+REST_FRAMEWORK = { 'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema' }
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
